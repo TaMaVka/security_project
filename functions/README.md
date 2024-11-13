@@ -11,6 +11,13 @@ SMTP_USERNAME="your_email@yandex.ru"<br>
 SMTP_PASSWORD=your_secure_password<br>
 RECIPIENT="somebody_email@example.ru"<br>
 6) получите пароль от выбранного почтового сервиса. Инструкции по получению приведены ниже
+7) измените файл .env согласно выбранному вами почтовому сервису <br>
+8) запустить скрипт, предварительно проверив, что python-dotenv у вас установлен. <br>
+В Linux можно это проверить так: pip install -U python-dotenv / pip3 install -U python-dotenv <br>
+Если данная библиотека будет у вас уже установлена, выдаст что-то похожее на: <br>
+Requirement already satisfied: python-dotenv in /home/your_username/.local/lib/python3.10/site-packages (1.0.1) <br>
+
+### Иструкции по получению пароля: <br>
 #### Для сервиса Яндекс: <br>
 Перейти в настройки -> почтовые программы <br>
 Поставить галочки к пунктам: С сервера imap.yandex.ru по протоколу IMAP; Пароли приложений и OAuth-токены; С сервера pop.yandex.ru по протоколу POP3. <br>
@@ -21,8 +28,4 @@ RECIPIENT="somebody_email@example.ru"<br>
 Зайти в свой Google аккаунтв раздел "Безопасность" и включить двухэтапную аутентификацию <br>
 В тех же настройках безопасности найдите раздел "Пароли приложений". Можно найти нужную страницу через поисковик. <br>
 Назовите пароль "Почта" или "Компьютер" и нажмите "Создать".<br>
-7) измените файл .env согласно выбранному вами почтовому сервису <br>
-8) запустить скрипт, предварительно проверив, что python-dotenv у вас установлен. <br>
-В Linux можно это проверить так: pip install -U python-dotenv / pip3 install -U python-dotenv <br>
-Если данная библиотека будет у вас уже установлена, выдаст что-то похожее на: <br>
-Requirement already satisfied: python-dotenv in /home/your_username/.local/lib/python3.10/site-packages (1.0.1) <br>
+
